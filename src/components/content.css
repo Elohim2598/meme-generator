@@ -1,0 +1,143 @@
+.content--container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.meme {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 3px 3px 30px rgba(0, 0, 0, 0.3);
+}
+
+input {
+  border-radius: 8px;
+  box-shadow: 3px 3px 30px rgba(0, 0, 0, 0.3);
+  background-color: white;
+  color: black;
+  font-size: 1.5rem;
+  padding: 1rem;
+  margin: 1rem;
+  border: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  border-radius: 8px;
+  color: white;
+  font-size: 1.5rem;
+  padding: 1rem 13.99rem;
+  margin: 1rem;
+  border: none;
+  width: fit-content;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 0, 0, 1) 0%,
+    rgba(249, 129, 0, 1) 51%,
+    rgba(255, 192, 0, 1) 100%
+  );
+
+  border-radius: 10px;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.content--container-buttons {
+  padding-bottom: 1rem;
+}
+
+.content--container--image {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.meme--text {
+  position: absolute;
+  top: 80%;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 20px 0;
+  padding: 0 5px;
+  font-family: impact, sans-serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
+    -2px 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000, 0 -2px 0 #000, -2px 0 0 #000,
+    2px 2px 5px #000;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+.top {
+  top: 0;
+}
+
+@media (max-width: 875px) {
+  input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+  }
+
+  .meme {
+    max-height: 23rem;
+  }
+
+  button {
+    padding: 1rem 5rem;
+    font-size: 1.5rem;
+  }
+  .meme--text {
+    font-size: 1.4rem;
+  }
+  .content--container {
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  input {
+    padding: 1.5rem;
+  }
+  .content--container-inputs {
+    height: 25vh;
+    margin-bottom: 3rem;
+  }
+
+  .content--container--image {
+    position: relative;
+    text-align: center;
+    color: white;
+    height: 30vh;
+    border-radius: 0;
+  }
+  .content--container-buttons {
+    height: 15vh;
+  }
+  .content--container {
+    padding: 0;
+  }
+  .meme {
+    border-radius: 0;
+    max-height: 30vh;
+  }
+}
